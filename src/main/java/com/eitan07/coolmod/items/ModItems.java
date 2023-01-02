@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
 
-    private static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CoolMod.MODID);
+    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CoolMod.MODID);
 
     public static RegistryObject<Item> WEED = ITEMS.register("weed", () -> new Item(new Item.Properties().tab(CreativeTab.CREATIVE_TAB)));
     public static RegistryObject<Item> JOINT = ITEMS.register("joint", () -> new Item(new Item.Properties().tab(CreativeTab.CREATIVE_TAB)));
